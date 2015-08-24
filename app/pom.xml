@@ -16,6 +16,7 @@
     <packaging>war</packaging>
 
     <properties>
+        <jetty.port>9999</jetty.port>
         <lucene.version>4.10.3</lucene.version>
         <spring.version>4.1.4.RELEASE</spring.version>
         <spring.security.version>3.2.5.RELEASE</spring.security.version>
@@ -375,7 +376,13 @@
                             <name>roller.custom.config</name>
                             <value>${project.build.directory}/test-classes/roller-jettyrun.properties</value>
                         </systemProperty>
+                        <systemProperty>
+                            <name>jetty.port</name>
+                            <value>9090</value>
+                        </systemProperty>
+
                     </systemProperties>
+
                 </configuration>
                 <dependencies>
                     <!-- Dependencies needed when using mvn jetty:run, not mvn test -->

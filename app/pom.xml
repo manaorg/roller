@@ -42,6 +42,12 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.34</version>
         </dependency>
+
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4</version>
+        </dependency>
         <!-- Alternative testing with Hibernate (used by default with JBoss)
              Important: set hibernate.transaction.factory_class=org.hibernate.transaction.JDBCTransactionFactory
              in your roller-custom.properties if using Hibernate with Tomcat
